@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // ======================
 // CARD HOVER EFFECT
 // ======================
-const cards = document.querySelectorAll(".shadow-lg, .shadow");
+const cards = document.querySelectorAll(".shadow");
 cards.forEach(card => {
     card.addEventListener("mouseenter", () => {
         card.classList.add("scale-105");
