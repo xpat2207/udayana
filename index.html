@@ -6,236 +6,309 @@
     <title>Empowering Entrepreneurs</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-        <header class="sticky top-0 z-20 bg-white shadow-md">
-            <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-                <div class="flex items-center gap-3">
-                    <img src="logo.svg" alt="Logo" class="w-10 h-10" />
-                    <span class="font-bold text-2xl text-green-600 tracking-wide">EmpowerID</span>
-                </div>
-                <ul class="flex gap-6 text-green-700 font-medium text-base">
-                    <li><a href="index.html" class="border-b-2 border-green-500 pb-1">Beranda</a></li>
-                    <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
-                    <li><a href="program.html" class="hover:text-green-500">Program</a></li>
-                    <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
-                    <li><a href="dashboard.html" class="hover:text-green-500">Dashboard</a></li>
-                    <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
-                    <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="bg-[#F6FDF9] min-h-screen">
-            <!-- Hero Section -->
-            <section class="bg-gradient-to-br from-green-500 via-green-400 to-white text-white text-center rounded-b-3xl shadow-lg pb-12 pt-16 px-4 animate-fadein">
-                <div class="max-w-2xl mx-auto animate-slideup">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Empowering Entrepreneurs<br><span class="text-green-200">for a Sustainable Future</span></h1>
-                    <p class="text-lg md:text-xl text-green-100 mb-6">Bersama membangun ekosistem UMKM, Startup, dan Social Enterprise Indonesia</p>
-                    <a href="#dashboard" class="inline-block bg-white text-green-600 font-bold px-8 py-3 rounded-full shadow hover:bg-green-600 hover:text-white transition">Gabung Sekarang</a>
-                </div>
-                <div class="flex flex-wrap justify-center gap-4 mt-10 animate-fadein">
-                    <div class="bg-white text-green-600 font-semibold px-8 py-3 rounded-xl shadow min-w-[180px]">UMKM Go Digital</div>
-                    <div class="bg-white text-green-600 font-semibold px-8 py-3 rounded-xl shadow min-w-[180px]">Startup Growth</div>
-                    <div class="bg-white text-green-600 font-semibold px-8 py-3 rounded-xl shadow min-w-[180px]">Social Entrepreneurship</div>
-                </div>
-                <div class="flex flex-wrap justify-center gap-6 mt-10 animate-fadein">
-                    <div class="bg-white text-green-600 rounded-xl px-8 py-5 shadow flex flex-col items-center min-w-[120px]">
-                        <span class="text-2xl font-bold">1200+</span>
-                        <span class="text-green-800 text-base font-medium">UMKM</span>
-                    </div>
-                    <div class="bg-white text-green-600 rounded-xl px-8 py-5 shadow flex flex-col items-center min-w-[120px]">
-                        <span class="text-2xl font-bold">150+</span>
-                        <span class="text-green-800 text-base font-medium">Startup</span>
-                    </div>
-                    <div class="bg-white text-green-600 rounded-xl px-8 py-5 shadow flex flex-col items-center min-w-[120px]">
-                        <span class="text-2xl font-bold">50+</span>
-                        <span class="text-green-800 text-base font-medium">Mentor</span>
-                    </div>
-                    <div class="bg-white text-green-600 rounded-xl px-8 py-5 shadow flex flex-col items-center min-w-[120px]">
-                        <span class="text-2xl font-bold">30+</span>
-                        <span class="text-green-800 text-base font-medium">Investor</span>
-                    </div>
-                </div>
-            </section>
-            <!-- Tentang Kami -->
-            <section class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-8 mt-12 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-4">Tentang Kami</h2>
-                <p class="mb-2"><span class="font-bold text-green-600">Visi:</span> Menjadi ekosistem wirausaha digital terdepan di Indonesia.</p>
-                <p class="mb-4"><span class="font-bold text-green-600">Misi:</span> Mendorong inovasi, kolaborasi, dan keberlanjutan melalui pemberdayaan UMKM, startup, dan social entrepreneur.</p>
-                <ul class="flex gap-4 mb-4">
-                    <li class="bg-green-100 text-green-700 px-4 py-2 rounded-lg font-medium">Inovasi</li>
-                    <li class="bg-green-100 text-green-700 px-4 py-2 rounded-lg font-medium">Kolaborasi</li>
-                    <li class="bg-green-100 text-green-700 px-4 py-2 rounded-lg font-medium">Keberlanjutan</li>
-                </ul>
-                <div class="mb-2 text-gray-700">Kami adalah komunitas yang berfokus pada pengembangan UMKM, startup, dan bisnis sosial di Indonesia.</div>
-                <div class="flex gap-4 items-center mt-2">
-                    <img src="logo-mitra1.png" alt="Mitra 1" class="h-10" />
-                    <img src="logo-mitra2.png" alt="Mitra 2" class="h-10" />
-                    <img src="logo-mitra3.png" alt="Mitra 3" class="h-10" />
-                </div>
-            </section>
-            <!-- Program -->
-            <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow p-8 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Program</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow flex flex-col items-start">
-                        <h3 class="font-bold text-lg mb-2">UMKM Go Digital</h3>
-                        <p>Pelatihan & digitalisasi usaha untuk UMKM.</p>
-                    </div>
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow flex flex-col items-start">
-                        <h3 class="font-bold text-lg mb-2">Startup Growth</h3>
-                        <p>Mentoring, inkubasi, dan akses ke investor.</p>
-                    </div>
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow flex flex-col items-start">
-                        <h3 class="font-bold text-lg mb-2">Social Entrepreneurship</h3>
-                        <p>Bisnis berdampak sosial & lingkungan.</p>
-                    </div>
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow flex flex-col items-start">
-                        <h3 class="font-bold text-lg mb-2">Digital Academy</h3>
-                        <p>Kursus online & webinar.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- Marketplace -->
-            <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow p-8 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Marketplace / Showcase</h2>
-                <div class="flex gap-4 mb-4">
-                    <select class="border border-green-200 rounded px-4 py-2 focus:outline-green-400">
-                        <option>Kategori</option>
-                    </select>
-                    <select class="border border-green-200 rounded px-4 py-2 focus:outline-green-400">
-                        <option>Lokasi</option>
-                    </select>
-                </div>
-                <div class="flex flex-wrap gap-4 mb-4">
-                    <div class="bg-green-50 text-green-700 rounded-xl px-6 py-4 font-medium shadow">Produk UMKM 1</div>
-                    <div class="bg-green-50 text-green-700 rounded-xl px-6 py-4 font-medium shadow">Produk UMKM 2</div>
-                    <div class="bg-green-50 text-green-700 rounded-xl px-6 py-4 font-medium shadow">Layanan Startup 1</div>
-                </div>
-                <button class="bg-green-600 text-white px-6 py-2 rounded-full font-bold shadow hover:bg-green-700 transition" onclick="alert('Silakan login untuk menambah produk!')">Tambah Produk</button>
-            </section>
-            <!-- Dashboard -->
-            <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow p-8 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Dashboard</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="font-bold text-green-600 mb-2">Event & Pelatihan</h3>
-                        <ul class="list-disc list-inside text-green-800 mb-4">
-                            <li>Webinar Digital Marketing</li>
-                            <li>Workshop Startup</li>
-                        </ul>
-                        <h3 class="font-bold text-green-600 mb-2">Artikel & Showcase</h3>
-                        <ul class="list-disc list-inside text-green-800">
-                            <li>Artikel: Tren Startup 2025</li>
-                            <li>Produk: Kopi Nusantara</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-green-600 mb-2">Fitur Member</h3>
-                        <ul class="list-disc list-inside text-green-800 mb-4">
-                            <li>Progress tracker pelatihan</li>
-                            <li>Upload produk/layanan</li>
-                            <li>Event reminder</li>
-                            <li>Profil usaha & networking</li>
-                        </ul>
-                        <button class="bg-green-600 text-white px-6 py-2 rounded-full font-bold shadow hover:bg-green-700 transition" onclick="alert('Fitur login coming soon!')">Login untuk akses penuh</button>
-                    </div>
-                </div>
-            </section>
-            <!-- Artikel & Resource Center -->
-            <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow p-8 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Artikel & Resource Center</h2>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow">
-                        <h4 class="font-bold mb-2">Bisnis Digital di Era Modern</h4>
-                        <p>Artikel bisnis digital, tren startup, green economy.</p>
-                    </div>
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow">
-                        <h4 class="font-bold mb-2">Success Story: UMKM Naik Kelas</h4>
-                        <p>Inspirasi wirausaha sukses.</p>
-                    </div>
-                    <div class="bg-green-50 text-green-700 rounded-xl p-5 shadow">
-                        <h4 class="font-bold mb-2">E-book Gratis</h4>
-                        <p><a href="#" class="text-green-600 underline hover:text-green-800" onclick="alert('Login untuk download e-book!')">Download</a></p>
-                    </div>
-                </div>
-            </section>
-            <!-- Kontak -->
-            <section class="max-w-4xl mx-auto bg-white rounded-2xl shadow p-8 mb-8 animate-fadein">
-                <h2 class="text-2xl font-bold text-green-700 mb-6">Kontak</h2>
-                <form class="flex flex-col gap-4 max-w-md" onsubmit="event.preventDefault();alert('Pesan Anda telah terkirim!');this.reset();">
-                    <input type="text" placeholder="Nama" required class="px-4 py-2 rounded-lg border border-green-200 focus:outline-green-400" />
-                    <input type="email" placeholder="Email" required class="px-4 py-2 rounded-lg border border-green-200 focus:outline-green-400" />
-                    <textarea placeholder="Pesan" required class="px-4 py-2 rounded-lg border border-green-200 focus:outline-green-400"></textarea>
-                    <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-full font-bold shadow hover:bg-green-700 transition">Kirim</button>
-                </form>
-                <div class="mt-6 text-green-800">
-                    <p>Jl. Contoh No. 123, Denpasar, Bali</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.123456789!2d115.217651!3d-8.670458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f1c1c1c1c1%3A0x123456789abcdef!2sDenpasar!5e0!3m2!1sid!2sid!4v1630000000000!5m2!1sid!2sid" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="mt-4 flex gap-4 text-green-700">
-                    <a href="#" class="hover:text-green-500">Instagram</a>
-                    <span>|</span>
-                    <a href="#" class="hover:text-green-500">Facebook</a>
-                    <span>|</span>
-                    <a href="#" class="hover:text-green-500">LinkedIn</a>
-                </div>
-            </section>
-        </main>
-        <!-- FOOTER -->
-        <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
-            <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
-                <div class="flex-1 min-w-[220px] mb-8">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">DE</div>
-                        <div>
-                            <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
-                            <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
-                        </div>
-                    </div>
-                    <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan Indonesia yang lebih hijau dan inovatif.</div>
-                    <div class="text-green-200 text-sm space-y-1">
-                        <div><span class="mr-2">📍</span>Jl. Sudirman No. 123, Jakarta Pusat</div>
-                        <div><span class="mr-2">📞</span>+62 21 1234 5678</div>
-                    </div>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Quick Links</div>
-                    <ul class="space-y-1">
-                        <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
-                        <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
-                        <li><a href="program.html" class="hover:text-green-400">Program</a></li>
-                        <li><a href="#" class="hover:text-green-400">Event</a></li>
-                        <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
-                        <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Program Populer</div>
-                    <ul class="space-y-1">
-                        <li>Green Tech Incubator</li>
-                        <li>Digital Marketing Mastery</li>
-                        <li>Startup Mentoring</li>
-                        <li>Fintech Innovation Lab</li>
-                        <li>Investor Readiness</li>
-                        <li>E-commerce Growth</li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
-                    <ul class="space-y-1">
-                        <li>Artikel & Blog</li>
-                        <li>Video Tutorial</li>
-                        <li>Template Bisnis</li>
-                        <li>Panduan Startup</li>
-                        <li>Industry Report</li>
-                        <li>Webinar Recording</li>
-                    </ul>
+<body class="bg-[#F6FDF9]">
+    <!-- HEADER -->
+ <header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 relative">
+    <!-- Logo -->
+    <div class="flex items-center gap-3 z-50">
+      <img src="logo.svg" alt="Logo" class="w-10 h-10" />
+      <span class="font-bold text-2xl text-green-600 tracking-wide">EmpowerID</span>
+    </div>
+
+    <!-- Tombol Menu (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-green-700 text-2xl relative z-50">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Drawer Menu (Mobile) -->
+    <div id="menu-nav" 
+      class="fixed top-[64px] left-0 h-[calc(100%-64px)] w-2/3 bg-white shadow-lg 
+             transform -translate-x-full transition-transform duration-500 ease-in-out z-40 md:hidden">
+      <!-- top-[64px] = tinggi navbar -->
+      <ul class="flex flex-col gap-6 p-6 text-green-700 font-medium text-base">
+        <li><a href="index.html" class="border-b-2 border-green-500 pb-1">Beranda</a></li>
+        <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+        <li><a href="program.html" class="hover:text-green-500">Program</a></li>
+        <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+        <li><a href="dashboard.html" class="hover:text-green-500">Dashboard</a></li>
+        <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+        <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex gap-6 text-green-700 font-medium text-base">
+      <li><a href="index.html" class="border-b-2 border-green-500 pb-1">Beranda</a></li>
+      <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+      <li><a href="program.html" class="hover:text-green-500">Program</a></li>
+      <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
+      <li><a href="dashboard.html" class="hover:text-green-500">Dashboard</a></li>
+      <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+      <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <main>
+        <!-- HERO dengan Auto Slide -->
+        <section class="relative text-white text-center rounded-b-3xl shadow-lg overflow-hidden">
+            <div class="relative w-full h-[400px] overflow-hidden rounded-b-3xl">
+                <div id="carousel" class="flex w-full h-full transition-transform duration-700">
+                    <img src="https://picsum.photos/id/1015/1200/400" class="w-full h-full object-cover flex-shrink-0" alt="Slide 1">
+                    <img src="https://picsum.photos/id/1016/1200/400" class="w-full h-full object-cover flex-shrink-0" alt="Slide 2">
+                    <img src="https://picsum.photos/id/1018/1200/400" class="w-full h-full object-cover flex-shrink-0" alt="Slide 3">
                 </div>
             </div>
-            <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.</div>
-        </footer>
+            <!-- Overlay Konten -->
+            <div class="absolute inset-0 flex flex-col justify-center items-center px-6 py-12 bg-black/40">
+                <h1 class="hero-title text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
+   Empowering <span class="text-yellow-200">Entrepreneurs</span><br>
+   for a <span class="text-green-100">Sustainable Future</span>
+</h1>
+
+                <p class="text-lg md:text-xl text-green-100 mb-8">Bersama membangun ekosistem UMKM, Startup, dan Social Enterprise Indonesia</p>
+                <a href="#dashboard" class="inline-block bg-white text-green-600 font-bold px-10 py-4 rounded-full shadow-lg hover:scale-105 hover:bg-green-600 hover:text-white transition-transform duration-300">🚀 Gabung Sekarang</a>
+            </div>
+        </section>
+
+        <!-- TENTANG KAMI -->
+<section class="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg p-12 mt-16 mb-12 animate-fadein">
+    <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">Tentang Kami</h2>
+    <p class="text-center text-gray-700 max-w-2xl mx-auto mb-8">
+        Website <span class="font-semibold text-green-600">UMKM Online</span> hadir sebagai solusi digital untuk pelaku usaha kecil dan menengah di Indonesia. 
+        Kami menyediakan platform untuk <strong>profil usaha</strong>, <strong>katalog produk</strong>, <strong>galeri foto</strong>, 
+        <strong>artikel tips bisnis</strong>, serta <strong>kontak langsung</strong> dengan konsumen.
+    </p>
+    <p class="text-center text-gray-600 max-w-2xl mx-auto mb-10">
+        Dirancang dengan tampilan sederhana, modern, responsif, dan mudah digunakan oleh semua kalangan, 
+        baik pelaku UMKM maupun konsumen.
+    </p>
+
+    <!-- Nilai Utama -->
+    <div class="flex justify-center gap-6 mb-10">
+        <span class="bg-green-100 text-green-700 px-6 py-3 rounded-full font-medium shadow">🌱 Simplicity</span>
+        <span class="bg-green-100 text-green-700 px-6 py-3 rounded-full font-medium shadow">🤝 Aksesibilitas</span>
+        <span class="bg-green-100 text-green-700 px-6 py-3 rounded-full font-medium shadow">🌍 Branding</span>
+    </div>
+
+    <!-- Logo Mitra -->
+    <div class="flex justify-center gap-8 items-center flex-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Mitra Microsoft" class="h-12 hover:scale-110 transition-transform" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Tokopedia.png" alt="Mitra Tokopedia" class="h-12 hover:scale-110 transition-transform" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Mitra Google" class="h-12 hover:scale-110 transition-transform" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Mitra Apple" class="h-12 hover:scale-110 transition-transform" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Logo_Bank_BRI.svg" alt="Mitra BRI" class="h-12 hover:scale-110 transition-transform" />
+    </div>
+</section>
+
+<!-- FITUR WEBSITE -->
+<section class="max-w-6xl mx-auto bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 animate-fadein">
+    <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Fitur Website</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-green-700">
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-house text-green-600 mr-2"></i>Homepage</h3>
+            <p>Informasi singkat tentang UMKM dan produk unggulan.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-user text-green-600 mr-2"></i>Profil UMKM</h3>
+            <p>Sejarah usaha, visi misi, dan informasi kontak.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-box text-green-600 mr-2"></i>Katalog Produk</h3>
+            <p>Produk lengkap dengan gambar, harga, dan deskripsi.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-newspaper text-green-600 mr-2"></i>Artikel & Tips</h3>
+            <p>Edukasi bisnis dan kewirausahaan untuk UMKM.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-image text-green-600 mr-2"></i>Galeri Foto</h3>
+            <p>Dokumentasi produk dan aktivitas UMKM.</p>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow hover:-translate-y-2 transition">
+            <h3 class="font-bold mb-2"><i class="fa-solid fa-envelope text-green-600 mr-2"></i>Form Kontak</h3>
+            <p>Konsumen bisa langsung terhubung dengan pelaku UMKM.</p>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Program -->
+        <section class="max-w-6xl mx-auto bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 animate-fadein">
+            <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Program Unggulan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white text-green-700 rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition-transform">
+                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-mobile-screen-button text-green-600 mr-2"></i>UMKM Go Digital</h3>
+                    <p>Pelatihan & digitalisasi usaha untuk UMKM agar siap bersaing di era digital.</p>
+                </div>
+                <div class="bg-white text-green-700 rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition-transform">
+                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-rocket text-green-600 mr-2"></i>Startup Growth</h3>
+                    <p>Mentoring, inkubasi, networking, dan akses ke investor.</p>
+                </div>
+                <div class="bg-white text-green-700 rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition-transform">
+                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-leaf text-green-600 mr-2"></i>Social Entrepreneurship</h3>
+                    <p>Pengembangan bisnis yang berdampak sosial & lingkungan.</p>
+                </div>
+                <div class="bg-white text-green-700 rounded-2xl p-6 shadow-lg hover:-translate-y-2 transition-transform">
+                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-graduation-cap text-green-600 mr-2"></i>Digital Academy</h3>
+                    <p>Kursus online, workshop, & webinar interaktif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTIKEL & RESOURCE -->
+<section class="max-w-6xl mx-auto bg-white rounded-3xl shadow-lg p-12 mb-12 animate-fadein">
+  <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Artikel & Resource Center</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    
+    <!-- Artikel 1 -->
+    <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&q=80&w=1080" 
+           alt="Bisnis Digital" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2 text-green-800">Transformasi Digital UMKM</h3>
+        <p class="text-sm text-gray-700 mb-3">Bagaimana digitalisasi membantu UMKM naik kelas di era global.</p>
+        <a href="https://www.kompas.com/edu" target="_blank" class="text-green-600 hover:underline text-sm font-medium">Sumber: Kompas</a>
+      </div>
+    </article>
+
+    <!-- Artikel 2 -->
+    <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
+      <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&q=80&w=1080" 
+           alt="UMKM Naik Kelas" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2 text-green-800">Kisah Sukses UMKM Naik Kelas</h3>
+        <p class="text-sm text-gray-700 mb-3">Inspirasi pelaku UMKM yang berhasil menembus pasar nasional.</p>
+        <a href="https://www.cnnindonesia.com/ekonomi" target="_blank" class="text-green-600 hover:underline text-sm font-medium">Sumber: CNN Indonesia</a>
+      </div>
+    </article>
+
+    <!-- Artikel 3 -->
+    <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
+      <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&q=80&w=1080" 
+           alt="Tips Bisnis" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="font-bold text-lg mb-2 text-green-800">Tips Digital Marketing untuk UMKM</h3>
+        <p class="text-sm text-gray-700 mb-3">Strategi promosi online yang efektif dan hemat biaya.</p>
+        <a href="https://www.kemenkopukm.go.id" target="_blank" class="text-green-600 hover:underline text-sm font-medium">Sumber: Kemenkop UKM</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+        <!-- Kontak -->
+        <section class="max-w-5xl mx-auto bg-gradient-to-br from-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 animate-fadein">
+            <h2 class="text-3xl font-bold text-green-700 mb-8 text-center">Hubungi Kami</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Form -->
+                <form class="flex flex-col gap-6 text-green-700" onsubmit="event.preventDefault();alert('Pesan Anda telah terkirim!');this.reset();">
+                    <input type="text" placeholder="Nama" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <input type="email" placeholder="Email" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <input type="tel" placeholder="Nomor HP" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <textarea placeholder="Pesan Anda" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow"></textarea>
+                    <button type="submit" class="bg-green-600 text-white px-8 py-3 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition">Kirim Pesan</button>
+                </form>
+
+                <!-- Info Kontak -->
+                <div class="flex flex-col justify-center text-green-800 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-green-600 text-xl"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-green-600 text-xl"></i>
+                        <span>info@empowerid.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+                        <a href="https://www.instagram.com/empowerid" target="_blank" class="hover:underline">Instagram</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-tiktok text-black text-xl"></i>
+                        <a href="https://www.tiktok.com/@empowerid" target="_blank" class="hover:underline">TikTok</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-facebook text-blue-600 text-xl"></i>
+                        <a href="https://www.facebook.com/empowerid" target="_blank" class="hover:underline">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
+            <div class="flex-1 min-w-[220px] mb-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">DE</div>
+                    <div>
+                        <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
+                        <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
+                    </div>
+                </div>
+                <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan Indonesia yang lebih hijau dan inovatif.</div>
+                <div class="text-green-200 text-sm space-y-1">
+                    <div><i class="fa-solid fa-location-dot mr-2"></i>Jl. Sudirman No. 123, Jakarta Pusat</div>
+                    <div><i class="fa-solid fa-phone mr-2"></i>+62 21 1234 5678</div>
+                </div>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Quick Links</div>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
+                    <li><a href="program.html" class="hover:text-green-400">Program</a></li>
+                    <li><a href="#" class="hover:text-green-400">Event</a></li>
+                    <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Program Populer</div>
+                <ul class="space-y-1">
+                    <li>Green Tech Incubator</li>
+                    <li>Digital Marketing Mastery</li>
+                    <li>Startup Mentoring</li>
+                    <li>Fintech Innovation Lab</li>
+                    <li>Investor Readiness</li>
+                    <li>E-commerce Growth</li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
+                <ul class="space-y-1">
+                    <li>Artikel & Blog</li>
+                    <li>Video Tutorial</li>
+                    <li>Template Bisnis</li>
+                    <li>Panduan Startup</li>
+                    <li>Industry Report</li>
+                    <li>Webinar Recording</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.</div>
+    </footer>
+
+    <!-- SCRIPT -->
     <script src="js/script.js"></script>
+    <script>
+        const carousel = document.getElementById("carousel");
+        let index = 0;
+        const slides = carousel.children.length;
+
+        setInterval(() => {
+            index = (index + 1) % slides;
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }, 4000);
+    </script>
 </body>
 </html>
