@@ -3,224 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program - EmpowerID</title>
+    <title>PROGRAM UNGGULAN</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-        <header class="sticky top-0 z-20 bg-white shadow-md">
-            <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-                <div class="flex items-center gap-3">
-                    <img src="logo.svg" alt="Logo" class="w-10 h-10" />
-                    <span class="font-bold text-2xl text-green-600 tracking-wide">EmpowerID</span>
-                </div>
-                <ul class="flex gap-6 text-green-700 font-medium text-base">
-                    <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
-                    <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
-                    <li><a href="program.html" class="border-b-2 border-green-500 pb-1">Program</a></li>
-                    <li><a href="marketplace.html" class="hover:text-green-500">Marketplace</a></li>
-                    <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
-                    <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="bg-[#F6FDF9] min-h-screen">
-                <section class="max-w-6xl mx-auto mt-12 mb-8 animate-fadein">
-                    <!-- Header Card -->
-                    <div class="bg-green-50 rounded-2xl shadow flex flex-col md:flex-row items-center justify-between px-8 py-6 mb-8">
-                        <div class="flex items-center gap-4">
-                            <div class="bg-green-400 text-white font-bold text-2xl w-14 h-14 rounded-full flex items-center justify-center shadow">DE</div>
-                            <div>
-                                <div class="font-bold text-xl text-green-900 flex items-center gap-2"> <span>Digital</span> <span class="text-green-600">Entrepreneur</span></div>
-                                <div class="text-green-700 font-medium">Program & Pelatihan</div>
-                            </div>
-                        </div>
-                        <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
-                            <a href="#" class="bg-green-600 text-white px-6 py-2 rounded-full font-bold shadow hover:bg-green-700 transition">Bergabung Sekarang</a>
-                        </div>
-                    </div>
-                    <!-- Filter Bar -->
-                    <div class="flex flex-wrap gap-3 mb-6">
-                        <button class="bg-green-600 text-white px-5 py-2 rounded-lg font-semibold flex items-center gap-2"><span>Semua Program</span></button>
-                        <button class="bg-white border border-green-300 text-green-600 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"><span>Inkubator</span></button>
-                        <button class="bg-white border border-green-300 text-green-600 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"><span>Mentoring</span></button>
-                        <button class="bg-white border border-green-300 text-green-600 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"><span>Workshop</span></button>
-                        <button class="bg-white border border-green-300 text-green-600 px-5 py-2 rounded-lg font-semibold flex items-center gap-2"><span>Akses Funding</span></button>
-                    </div>
-                    <div class="text-right text-green-700 text-sm mb-4">Menampilkan 6 program</div>
-                    <!-- Program Cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <!-- Card 1 -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=600&q=80" alt="Green Tech Incubator" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded">Inkubator</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">Advanced</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">Green Tech Incubator</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Program inkubasi intensif untuk startup teknologi hijau dengan fokus pada solusi berkelanjutan.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 6 bulan</span>
-                                    <span>👥 20 startup</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: 15 Februari 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde16?auto=format&fit=crop&w=600&q=80" alt="Digital Marketing Mastery" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded">Workshop</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">Intermediate</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">Digital Marketing Mastery</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Workshop intensif tentang strategi digital marketing untuk startup dan UMKM.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 2 hari</span>
-                                    <span>👥 50 peserta</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: 28 Januari 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="1-on-1 Startup Mentoring" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded">Mentoring</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">All Levels</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">1-on-1 Startup Mentoring</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Mentoring personal dengan founder berpengalaman untuk akselerasi bisnis.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 3 bulan</span>
-                                    <span>👥 1 startup</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: Tersedia sepanjang tahun</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 4 (dummy) -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80" alt="Fintech Innovation Lab" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded">Inkubator</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">All Levels</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">Fintech Innovation Lab</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Lab inovasi untuk startup fintech yang ingin mengembangkan solusi keuangan digital.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 4 bulan</span>
-                                    <span>👥 10 startup</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: 10 Maret 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 5 (dummy) -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Investor Readiness" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded">Mentoring</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">Advanced</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">Investor Readiness</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Persiapan startup untuk mendapatkan pendanaan dari investor dan venture capital.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 1 bulan</span>
-                                    <span>👥 15 startup</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: 1 April 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 6 (dummy) -->
-                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="relative">
-                                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="E-commerce Growth" class="w-full h-40 object-cover" />
-                                <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded">Inkubator</span>
-                                <span class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">Intermediate</span>
-                            </div>
-                            <div class="p-5 flex-1 flex flex-col">
-                                <h3 class="font-bold text-lg mb-1">E-commerce Growth</h3>
-                                <p class="text-gray-700 mb-4 flex-1">Program akselerasi untuk UMKM dan startup e-commerce agar tumbuh pesat secara digital.</p>
-                                <div class="flex items-center gap-4 text-gray-500 text-sm mb-1">
-                                    <span>⏳ 2 bulan</span>
-                                    <span>👥 30 startup</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-500 text-sm">
-                                    <span>📅 Mulai: 20 Mei 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-        </main>
-        <!-- FOOTER -->
-        <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
-            <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
-                <div class="flex-1 min-w-[220px] mb-8">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">DE</div>
-                        <div>
-                            <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
-                            <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
-                        </div>
-                    </div>
-                    <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan Indonesia yang lebih hijau dan inovatif.</div>
-                    <div class="text-green-200 text-sm space-y-1">
-                        <div><span class="mr-2">📍</span>Jl. Sudirman No. 123, Jakarta Pusat</div>
-                        <div><span class="mr-2">📞</span>+62 21 1234 5678</div>
+<body class="bg-[#F6FDF9]">
+    <!-- HEADER -->
+ <header class="sticky top-0 z-50 bg-white shadow-md">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 relative">
+    <!-- Logo -->
+    <div class="flex items-center gap-3 z-50">
+      <img src="img/LOGO BINARIAN.png" alt="Logo" class="w-10 h-10" />
+      <span class="font-bold text-2xl text-green-600 tracking-wide">Binarian</span>
+    </div>
+
+    <!-- Tombol Menu (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-green-700 text-2xl relative z-50">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Drawer Menu (Mobile) -->
+    <div id="menu-nav" 
+      class="fixed top-[64px] left-0 h-[calc(100%-64px)] w-2/3 bg-white shadow-lg 
+             transform -translate-x-full transition-transform duration-500 ease-in-out z-40 md:hidden">
+      <!-- top-[64px] = tinggi navbar -->
+      <ul class="flex flex-col gap-6 p-6 text-green-700 font-medium text-base">
+        <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
+        <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+        <li><a href="program.html" class="border-b-2 border-green-500 pb-1">Program</a></li>
+        <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
+        <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+        <li><a href="kontak.html" class="hover:text-green-500">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Menu Desktop -->
+    <ul class="hidden md:flex gap-6 text-green-700 font-medium text-base">
+      <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
+      <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+      <li><a href="program.html" class="border-b-2 border-green-500 pb-1">Program</a></li>
+      <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
+      <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+      <li><a href="kontak.html" class="hover:text-green-500  pb-1">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 py-16 text-center">
+    <h1 class="text-3xl md:text-4xl font-bold text-green-700 mb-4">Program Unggulan untuk UMKM</h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Kami menghadirkan program nyata, sumber belajar, dan kolaborasi untuk membantu UMKM naik kelas melalui digitalisasi, branding, hingga ekspor internasional.
+    </p>
+  </section>
+
+  <!-- PROGRAM LIST -->
+  <section class="max-w-7xl mx-auto px-6 pb-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- CARD -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden reveal">
+      <img src="https://images.unsplash.com/photo-1591696331115-ef3fabb494c8?auto=format&fit=crop&w=800&q=80" alt="UMKM Digital" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Program UMKM Level Up</h3>
+        <p class="text-gray-600 mb-4 text-sm">Inisiatif Kemenkominfo untuk mempercepat digitalisasi UMKM di berbagai kota di Indonesia.</p>
+        <a href="https://indonesia.go.id/kategori/editorial/8587/umkm-indonesia-makin-kuat-program-level-up-2024-siap-dorong-digitalisasi-bisnis" target="_blank" class="text-green-600 font-medium hover:underline">Pelajari selengkapnya →</a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden reveal">
+      <img src="https://images.unsplash.com/photo-1581093588401-22f6365b94d1?auto=format&fit=crop&w=800&q=80" alt="Pelatihan UMKM" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">Pelatihan & Pendampingan UMKM</h3>
+        <p class="text-gray-600 mb-4 text-sm">Program pemberdayaan dengan pelatihan teknis, mentoring, dan akses permodalan untuk usaha kecil.</p>
+        <a href="https://ukmindonesia.id/index.php/baca-deskripsi-posts/5-program-pemberdayaan-umkm-dalam-mencapai-pertumbuhan-ekonomi-dan-kemandirian-usaha" target="_blank" class="text-green-600 font-medium hover:underline">Pelajari selengkapnya →</a>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden reveal">
+      <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Ekspor UMKM" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-semibold text-green-700 mb-2">UMKM Go Export</h3>
+        <p class="text-gray-600 mb-4 text-sm">Kolaborasi BCA & ICC Indonesia membantu UMKM masuk pasar global melalui bimbingan ekspor.</p>
+        <a href="https://www.bca.co.id/en/tentang-bca/media-riset/pressroom/siaran-pers/2024/08/28/07/58/bca-gelar-umkm-indonesia-go-export-2024" target="_blank" class="text-green-600 font-medium hover:underline">Pelajari selengkapnya →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMBER BELAJAR -->
+  <section class="bg-green-50 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-green-700 mb-8">📚 Sumber Belajar UMKM</h2>
+      <ul class="space-y-6">
+        <li class="reveal">
+          <h3 class="font-semibold">Manajemen Bisnis Usaha Mikro & Kecil</h3>
+          <p class="text-sm text-gray-600">E-book dari Universitas Trilogi membahas perencanaan usaha, struktur organisasi, keuangan, dan pemasaran.</p>
+          <a href="https://info.trilogi.ac.id/repository/assets/uploads/AGB/0cbc6-e-book-manajemen-bisnis-usaha-mikro-dan-kecil.pdf" target="_blank" class="text-green-600 hover:underline text-sm">Unduh PDF</a>
+        </li>
+        <li class="reveal">
+          <h3 class="font-semibold">UMKM & Kewirausahaan: Panduan Praktis</h3>
+          <p class="text-sm text-gray-600">Panduan strategi wirausaha UMKM, analisis SWOT, hingga digitalisasi bisnis.</p>
+          <a href="https://www.researchgate.net/publication/380429484_UMKM_Kewirausahaan_Panduan_Praktis" target="_blank" class="text-green-600 hover:underline text-sm">Baca Online</a>
+        </li>
+        <li class="reveal">
+          <h3 class="font-semibold">UMKM Naik Kelas</h3>
+          <p class="text-sm text-gray-600">Strategi agar UMKM bisa naik kelas dengan digitalisasi, branding, dan ekspansi usaha.</p>
+          <a href="https://stiamipress.stiami.ac.id/wp-content/uploads/2024/01/Buku-UMKM-Naik-Kelas.pdf" target="_blank" class="text-green-600 hover:underline text-sm">Unduh PDF</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  
+    <!-- FOOTER -->
+    <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
+            <div class="flex-1 min-w-[220px] mb-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">DE</div>
+                    <div>
+                        <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
+                        <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
                     </div>
                 </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Quick Links</div>
-                    <ul class="space-y-1">
-                        <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
-                        <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
-                        <li><a href="program.html" class="hover:text-green-400">Program</a></li>
-                        <li><a href="#" class="hover:text-green-400">Event</a></li>
-                        <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
-                        <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Program Populer</div>
-                    <ul class="space-y-1">
-                        <li>Green Tech Incubator</li>
-                        <li>Digital Marketing Mastery</li>
-                        <li>Startup Mentoring</li>
-                        <li>Fintech Innovation Lab</li>
-                        <li>Investor Readiness</li>
-                        <li>E-commerce Growth</li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
-                    <ul class="space-y-1">
-                        <li>Artikel & Blog</li>
-                        <li>Video Tutorial</li>
-                        <li>Template Bisnis</li>
-                        <li>Panduan Startup</li>
-                        <li>Industry Report</li>
-                        <li>Webinar Recording</li>
-                    </ul>
+                <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan Indonesia yang lebih hijau dan inovatif.</div>
+                <div class="text-green-200 text-sm space-y-1">
+                    <div><i class="fa-solid fa-location-dot mr-2"></i>Jl. Sudirman No. 123, Jakarta Pusat</div>
+                    <div><i class="fa-solid fa-phone mr-2"></i>+62 21 1234 5678</div>
                 </div>
             </div>
-            <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.</div>
-        </footer>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Quick Links</div>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
+                    <li><a href="program.html" class="hover:text-green-400">Program</a></li>
+                    <li><a href="#" class="hover:text-green-400">Event</a></li>
+                    <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Program Populer</div>
+                <ul class="space-y-1">
+                    <li>Green Tech Incubator</li>
+                    <li>Digital Marketing Mastery</li>
+                    <li>Startup Mentoring</li>
+                    <li>Fintech Innovation Lab</li>
+                    <li>Investor Readiness</li>
+                    <li>E-commerce Growth</li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
+                <ul class="space-y-1">
+                    <li>Artikel & Blog</li>
+                    <li>Video Tutorial</li>
+                    <li>Template Bisnis</li>
+                    <li>Panduan Startup</li>
+                    <li>Industry Report</li>
+                    <li>Webinar Recording</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.</div>
+    </footer>
+
+    <!-- SCRIPT -->
     <script src="js/script.js"></script>
+    <script src="js/artikel.js"></script>
+    <script>
+        const carousel = document.getElementById("carousel");
+        let index = 0;
+        const slides = carousel.children.length;
+
+        setInterval(() => {
+            index = (index + 1) % slides;
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }, 4000);
+    </script>
+      <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const reveals = document.querySelectorAll(".reveal");
+      const obs = new IntersectionObserver((entries, o) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-6");
+            o.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      reveals.forEach(el => {
+        el.classList.add("opacity-0", "translate-y-6", "transition-all", "duration-700", "ease-out");
+        obs.observe(el);
+      });
+    });
+  </script>
 </body>
 </html>
