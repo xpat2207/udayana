@@ -283,3 +283,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial render
   renderArticles(articles);
 });
+
