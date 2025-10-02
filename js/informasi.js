@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Regulasi','Hukum','Pangan'],
       date: '10 Oktober 2025',
       link: 'https://bpjph.halal.go.id/detail/sertifikasi-halal',
-      image: 'https://images.unsplash.com/photo-1596489391038-f94d93616616?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://bpjph.halal.go.id/static/7d4c9a720c62ae26b61d97e5dd901d9c/07142/17_Oktober_2024_7x3m_39_x_25_cm_57286a28b6.webp',
       image_alt: 'Dokumen dan regulasi'
     },
     {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Harga Pokok','Ekonomi','Komoditas'],
       date: '1 Oktober 2025',
       link: 'https://panelharga.badanpangan.go.id/',
-      image: 'https://images.unsplash.com/photo-1542838132-92c733004cd8?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://api-panelhargav2.badanpangan.go.id/storage/uploads/slider/hCyqSceVonWoftg2lSJD8i53XAGfMEoOsgg6uVVv.jpg',
       image_alt: 'Pasar Tradisional'
     },
     {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Tren Pasar','Bahan Baku','Lingkungan'],
       date: '28 September 2025',
       link: 'https://www.cnbcindonesia.com/entrepreneur/20220923163731-25-374532/jurus-produk-umkm-laris-manis-buat-kemasan-yang-mengesankan',
-      image: 'https://images.unsplash.com/photo-1558237517-57ed6c61f224?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://awsimages.detik.net.id/visual/2021/09/01/produk-grandvilleabon-salah-satu-umkm-shopee-foto-ist-2_169.jpeg?w=900&q=80',
       image_alt: 'Green packaging'
     },
     {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Kebijakan','Perbankan','Pendanaan'],
       date: '25 September 2025',
       link: 'https://kur.ekon.go.id/kebijakan-kur',
-      image: 'https://images.unsplash.com/photo-1556740714-a837c3554030?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://kur.ekon.go.id/upload/blog/18-02-13_kebijakan-kur_nl7g.jpg',
       image_alt: 'Pinjaman bank'
     },
     {
@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
       long_description: 'Brand lokal berhasil memanfaatkan storytelling dan digital marketing untuk menguasai pangsa pasar di platform e-commerce utama.',
       tags: ['Analisis Pasar','E-commerce','Laporan'],
       date: '20 September 2025',
-      link: 'https://databoks.katadata.co.id/tags/produk-kecantikan',
-      image: 'https://images.unsplash.com/photo-1622328608405-c49c7199c016?auto=format&fit=crop&w=1200&q=80',
+      link: 'https://www.detik.com/jatim/berita/d-6924793/15-brand-kecantikan-lokal-ada-skincare-hingga-make-up',
+      image: 'https://awsimages.detik.net.id/community/media/visual/2022/03/29/ilustrasi-skincare-serum-wajah_169.png?w=700&q=90',
       image_alt: 'Beauty products'
     },
     {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Tips Bisnis','SDM','Manajemen'],
       date: '15 September 2025',
       link: 'https://www.ekrut.com/media/manajemen-sumber-daya-manusia',
-      image: 'https://images.unsplash.com/photo-1531545514256-429c9b45967a?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://storage.googleapis.com/ekrutassets/blogs/images/000/002/982/original/manajemen-sumber-daya-manusia---EKRUT.jpg',
       image_alt: 'Meeting bisnis'
     },
     {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Komoditas','Ekspor','Peluang Usaha'],
       date: '5 September 2025',
       link: 'https://satudata.kemendag.go.id/data-informasi/perdagangan-luar-negeri/ekspor-non-migas-komoditi',
-      image: 'https://images.unsplash.com/photo-1596728076044-f18b31a54163?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://satudata.kemendag.go.id/assets/web/images/related-authorities/1658303437_a5812c841b6e551b7ffb.png',
       image_alt: 'Rempah-rempah'
     },
     {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Event','Pameran','Pelatihan'],
       date: '30 Agustus 2025',
       link: 'https://briumkmexport.com/',
-      image: 'https://images.unsplash.com/photo-1558507652-320c22998782?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://briumkmexport.com/images/home/grand2.jpg?v=2',
       image_alt: 'Pameran bisnis'
     },
     {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Inspirasi','Kisah Sukses','Berita Lokal'],
       date: '20 Agustus 2025',
       link: 'https://www.cnnindonesia.com/ekonomi/20250926163426-625-1278125/pendampingan-bri-dorong-kopi-lokal-naik-kelas-dari-hobi-jadi-bisnis',
-      image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://akcdn.detik.net.id/visual/2025/09/26/bri-1758878375133_169.jpeg?w=650&q=90',
       image_alt: 'Kopi dan bisnis'
     },
     {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tags: ['Laporan','Ekspor','Analisis Harga'],
       date: '10 Agustus 2025',
       link: 'https://www.bps.go.id/id/statistics-table/2/MjMxMiMy/nilai-ekspor-bulanan-hasil-industri-menurut-komoditas.html',
-      image: 'https://images.unsplash.com/photo-1596048123000-69279589d81d?auto=format&fit=crop&w=1200&q=80',
+      image: 'https://www.bps.go.id/_next/image?url=%2Fassets%2Flogo-bps.png&w=256&q=75',
       image_alt: 'Furniture'
     }
   ];
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="text-gray-700 mb-4 flex-1">${item.short_description}</p>
         <div class="flex flex-wrap gap-2 mb-2">${tagHTML}</div>
         <div class="flex items-center gap-2 text-gray-500 text-sm">
-          <span>📅 ${item.date}</span>
+          <span><i class="fa-solid fa-calendar-days"></i> ${item.date}</span>
           <button data-item-id="${item.id}" class="detail-btn ml-auto bg-green-600 text-white px-4 py-1 rounded-full text-xs font-bold hover:bg-green-700 transition">Lihat Detail</button>
         </div>
       </div>
