@@ -10,6 +10,45 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    /* Modal overlay & content styling (agar tampil di tengah dan responsif) */
+    .modal-overlay.hidden { display: none; }
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.45);
+      z-index: 60;
+      opacity: 0;
+      transition: opacity 0.28s ease;
+      padding: 1rem;
+    }
+    .modal-overlay.active { opacity: 1; }
+    .modal-content {
+      width: 100%;
+      max-width: 920px;
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(2,6,23,0.35);
+      transform: translateY(8px);
+      transition: transform 0.28s ease;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .modal-overlay.active .modal-content { transform: translateY(0); }
+    .modal-content img { width: 100%; height: 16rem; object-fit: cover; }
+    /* small helpers */
+    .card-interactive { transition: transform .18s ease, box-shadow .18s ease; cursor: default; }
+    .card-interactive:hover { transform: translateY(-6px); box-shadow: 0 18px 32px rgba(2,6,23,.08); }
+    /* ensure long description scroll inside modal */
+    .modal-scroll { overflow:auto; padding: 1rem 1.25rem; }
+    /* close button */
+    .close-x { line-height:1; font-size:1.4rem; }
+  </style>
 </head>
 
 <body class="bg-[#F6FDF9]">
@@ -53,142 +92,69 @@
         </nav>
     </header>
 
+  <main class="min-h-screen">
+    <section class="max-w-6xl mx-auto mt-12 mb-8 px-4 sm:px-6 lg:px-8">
+      <h1 id="main-header" class="text-4xl font-extrabold text-green-900 mb-6 text-center">Pusat Data & Wawasan UMKM</h1>
+      <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-10">Dapatkan informasi terkini, analisis pasar, tren harga, dan peluang usaha spesifik untuk pelaku UMKM di Indonesia.</p>
+
+```
+  <div class="bg-green-50 border border-green-200 rounded-2xl shadow-lg p-6 mb-10 text-center transform transition duration-500 hover:shadow-xl">
+    <div class="font-bold text-2xl text-green-900 mb-2">Pantau Denyut Pasar UMKM</div>
+    <div class="text-green-700 font-medium max-w-2xl mx-auto">Pilih kategori di bawah ini untuk mengakses <strong>Informasi, Update, Wawasan, Info Pasar, Agenda, Kabar UMKM,</strong> dan <strong>Insight</strong> yang paling relevan untuk bisnis Anda.</div>
+  </div>
+
+  <div id="tab-container" class="flex flex-wrap justify-center gap-2 mb-12">
+    <button data-tab="informasi" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400 tab-active"><span>📊</span> Informasi</button>
+    <button data-tab="update" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>📰</span> Update</button>
+    <button data-tab="wawasan" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>🌍</span> Wawasan</button>
+    <button data-tab="info_pasar" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>📈</span> Info Pasar</button>
+    <button data-tab="agenda" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>📅</span> Agenda</button>
+    <button data-tab="kabar_umkm" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>📢</span> Kabar UMKM</button>
+    <button data-tab="insight" class="tab-btn bg-white border border-green-200 px-4 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm transition-all duration-300 hover:bg-green-50 hover:border-green-400"><span>🔍</span> Insight</button>
+  </div>
+
+  <div id="content-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Cards akan dirender oleh JS -->
+  </div>
+</section>
+```
+
+  </main>
+
+  <!-- Modal (disembunyikan via class 'hidden') -->
+
+  <div id="detail-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content" role="document">
+      <div class="relative">
+        <button id="close-modal-btn" aria-label="Tutup modal" class="absolute top-3 right-3 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-70 transition z-10 close-x">&times;</button>
+        <img id="modal-image" src="" alt="Detail Gambar" />
+      </div>
+
+```
+  <div class="p-6 modal-scroll">
+    <h2 id="modal-title" class="text-2xl font-bold text-green-800 mb-2"></h2>
+
+    <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+      <span id="modal-category" class="font-medium text-green-600"></span>
+      <span id="modal-date"></span>
+    </div>
+
+    <p id="modal-long-description" class="text-gray-700 mb-6 leading-relaxed"></p>
+
+    <div class="flex justify-end gap-3">
+      <button id="modal-close-action" class="bg-gray-200 text-gray-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-300 transition">Tutup</button>
+      <a id="modal-source-link" href="#" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition flex items-center gap-2">
+        Lanjut ke Sumber
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7v7M10 14L21 3"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
 
 
-    <main class="bg-[#F6FDF9] min-h-screen">
-        <section class="max-w-6xl mx-auto mt-12 mb-8 animate-fadein">
-            <!-- Header Card -->
-            <div
-                class="bg-green-50 rounded-2xl shadow flex flex-col md:flex-row items-center justify-between px-8 py-6 mb-8">
-                <div class="flex items-center gap-4">
-                    <div
-                        class="bg-green-400 text-white font-bold text-2xl w-14 h-14 rounded-full flex items-center justify-center shadow">
-                        DE</div>
-                    <div>
-                        <div class="font-bold text-xl text-green-900 flex items-center gap-2"> <span>Digital</span>
-                            <span class="text-green-600">Entrepreneur</span></div>
-                        <div class="text-green-700 font-medium">Sumber Daya</div>
-                    </div>
-                </div>
-                <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
-                    <a href="#"
-                        class="bg-green-600 text-white px-6 py-2 rounded-full font-bold shadow hover:bg-green-700 transition">Bergabung
-                        Sekarang</a>
-                </div>
-            </div>
-            <!-- Tab Filter -->
-            <div class="flex justify-center gap-2 mb-8">
-                <button
-                    class="bg-white border border-green-200 px-8 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400">
-                    <span>📰</span> Artikel <span class="ml-1 text-green-500">(6)</span></button>
-                <button
-                    class="bg-white border border-green-200 px-8 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400">
-                    <span>🎥</span> Video <span class="ml-1 text-green-500">(4)</span></button>
-                <button
-                    class="bg-white border border-green-200 px-8 py-2 rounded-full font-semibold flex items-center gap-2 text-green-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-green-400">
-                    <span>📷</span> Foto <span class="ml-1 text-green-500">(6)</span></button>
-            </div>
-            <!-- Showcase Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
-                            alt="Digital Marketing" class="w-full h-40 object-cover" />
-                        <span
-                            class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded">Digital
-                            Marketing</span>
-                        <span
-                            class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">8
-                            menit</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col">
-                        <h3 class="font-bold text-lg mb-1">10 Strategi Digital Marketing untuk Startup Berkelanjutan
-                        </h3>
-                        <p class="text-gray-700 mb-4 flex-1">Panduan lengkap membangun strategi pemasaran digital yang
-                            efektif dan ramah lingkungan untuk startup modern.</p>
-                        <div class="flex flex-wrap gap-2 mb-2">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Marketing</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Startup</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Sustainability</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                            <span>👤 Sarah Wijaya</span>
-                            <span class="ml-auto flex items-center gap-1 text-yellow-500 font-bold">★ 4.8</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm">
-                            <span>📅 15/1/2024</span>
-                            <a href="#"
-                                class="ml-auto bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-bold">Baca</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80"
-                            alt="Funding" class="w-full h-40 object-cover" />
-                        <span
-                            class="absolute top-3 left-3 bg-green-700 text-white text-xs font-bold px-3 py-1 rounded">Funding</span>
-                        <span
-                            class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">12
-                            menit</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col">
-                        <h3 class="font-bold text-lg mb-1">Cara Mendapatkan Funding untuk Startup Green Technology</h3>
-                        <p class="text-gray-700 mb-4 flex-1">Tips dan trik mendapatkan pendanaan dari investor untuk
-                            startup teknologi hijau yang berkelanjutan.</p>
-                        <div class="flex flex-wrap gap-2 mb-2">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Funding</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Green Tech</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Investment</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                            <span>👤 Ahmad Rahman</span>
-                            <span class="ml-auto flex items-center gap-1 text-yellow-500 font-bold">★ 4.9</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm">
-                            <span>📅 10/1/2024</span>
-                            <a href="#"
-                                class="ml-auto bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-bold">Baca</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                    <div class="relative">
-                        <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=600&q=80"
-                            alt="Startup" class="w-full h-40 object-cover" />
-                        <span
-                            class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded">Startup</span>
-                        <span
-                            class="absolute top-3 right-3 bg-gray-200 text-gray-700 text-xs font-bold px-3 py-1 rounded">15
-                            menit</span>
-                    </div>
-                    <div class="p-5 flex-1 flex flex-col">
-                        <h3 class="font-bold text-lg mb-1">Membangun MVP yang Sustainable dan Cost-Effective</h3>
-                        <p class="text-gray-700 mb-4 flex-1">Panduan step-by-step untuk mengembangkan Minimum Viable
-                            Product yang efisien dan berkelanjutan.</p>
-                        <div class="flex flex-wrap gap-2 mb-2">
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">MVP</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Product
-                                Development</span>
-                            <span class="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">Lean Startup</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm mb-1">
-                            <span>👤 Dr. Budi Santoso</span>
-                            <span class="ml-auto flex items-center gap-1 text-yellow-500 font-bold">★ 4.7</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-500 text-sm">
-                            <span>📅 5/1/2024</span>
-                            <a href="#"
-                                class="ml-auto bg-green-100 text-green-700 px-4 py-1 rounded-full text-xs font-bold">Baca</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
     <!-- FOOTER -->
     <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
@@ -248,6 +214,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/informasi.js"></script>
 </body>
 
 </html>
