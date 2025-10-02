@@ -60,12 +60,9 @@
         <section class="relative text-white text-center rounded-b-3xl shadow-lg overflow-hidden w-full m-0 p-0">
             <div class="relative w-full h-[400px] overflow-hidden rounded-b-3xl m-0 p-0">
                 <div id="carousel" class="flex w-full h-full transition-transform duration-700 m-0 p-0">
-                    <img src="img/gambar 1.png"
-                        class="w-full h-full object-cover flex-shrink-0" alt="Slide 1">
-                    <img src="img/gambar 2.png"
-                        class="w-full h-full object-cover flex-shrink-0" alt="Slide 2">
-                    <img src="img/gambar 3.png"
-                        class="w-full h-full object-cover flex-shrink-0" alt="Slide 3">
+                    <img src="img/gambar 1.png" class="w-full h-full object-cover flex-shrink-0" alt="Slide 1">
+                    <img src="img/gambar 2.png" class="w-full h-full object-cover flex-shrink-0" alt="Slide 2">
+                    <img src="img/gambar 3.png" class="w-full h-full object-cover flex-shrink-0" alt="Slide 3">
                 </div>
                 <!-- Kontrol manual -->
                 <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
@@ -95,7 +92,8 @@
             <p class="text-center text-gray-700 text-lg mb-8 w-full mx-auto">
                 BINARIAN adalah platform digital yang berfokus pada penyediaan informasi seputar UMKM, startup, dan
                 social enterprise di Indonesia. Website ini tidak menawarkan layanan, transaksi, atau fitur jual beli,
-                melainkan hanya menyajikan konten informatif, edukasi, dan inspirasi bagi pelaku usaha dan masyarakat umum.
+                melainkan hanya menyajikan konten informatif, edukasi, dan inspirasi bagi pelaku usaha dan masyarakat
+                umum.
             </p>
             <div class="grid md:grid-cols-2 gap-8 mb-10 w-full">
                 <div
@@ -112,7 +110,8 @@
                 </div>
                 <div
                     class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4 hover:-translate-y-2 hover:shadow-xl transition">
-                    <h3 class="font-bold text-green-700 text-xl mb-2"><i class="fa-solid fa-users mr-2"></i>Tujuan Website</h3>
+                    <h3 class="font-bold text-green-700 text-xl mb-2"><i class="fa-solid fa-users mr-2"></i>Tujuan
+                        Website</h3>
                     <ul class="list-disc list-inside text-gray-700">
                         <li>Menyebarkan pengetahuan dan edukasi bisnis</li>
                         <li>Memberikan inspirasi dan motivasi bagi pelaku UMKM</li>
@@ -130,16 +129,17 @@
                     <div class=" flex flex-col">
                         <h2 class="text-3xl font-bold text-green-700 mb-6 ">Mengapa Memilih Kami?</h2>
                         <p class="text-gray-800 mb-8 ">
-                            Kami berkomitmen untuk memberdayakan pelaku UMKM, startup, dan social enterprise di Indonesia
+                            Kami berkomitmen untuk memberdayakan pelaku UMKM, startup, dan social enterprise di
+                            Indonesia
                             melalui platform digital yang inovatif dan mudah diakses.
-                            Dengan berbagai fitur unggulan, kami membantu Anda mengembangkan bisnis, memperluas jaringan,
+                            Dengan berbagai fitur unggulan, kami membantu Anda mengembangkan bisnis, memperluas
+                            jaringan,
                             dan meningkatkan pengetahuan secara efektif.
                         </p>
-                        <div href="tentang.html"
-                            class="bg-green-600 text-white px-3 py-2 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition text-center text-sm">Pelajari
-                            Lebih Lanjut</div>
-                    </div>
-                </div>
+                        <a href="tentang.html"
+                            class="bg-green-600 text-white px-3 py-2 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition text-sm self-start">
+                            Pelajari Lebih Lanjut
+                        </a>
             </section>
             <div class="grid md:grid-cols-3 gap-6 w-full">
                 <div class="bg-white rounded-xl shadow p-5 text-center transition transform hover:scale-105">
@@ -164,7 +164,8 @@
         </section>
 
         <!-- FITUR WEBSITE -->
-        <section class="w-full bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 m-0">
+        <section
+            class="w-full bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 m-0">
             <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Fitur Website</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-green-700 w-full">
                 <div
@@ -287,42 +288,42 @@
     <!-- SCRIPT -->
     <script src="js/script.js"></script>
     <script>
-let currentSlide = 0;
-function showSlide(idx) {
-    const carousel = document.getElementById('carousel');
-    const slideCount = carousel.children.length;
-    if (idx < 0) idx = 0;
-    if (idx >= slideCount) idx = slideCount - 1;
-    carousel.style.transform = `translateX(-${idx * 100}%)`;
-    currentSlide = idx;
-}
-showSlide(0);
-
-// Auto slide setiap 2 detik
-setInterval(() => {
-    const carousel = document.getElementById('carousel');
-    if (!carousel) return;
-    const slideCount = carousel.children.length;
-    let nextSlide = currentSlide + 1;
-    if (nextSlide >= slideCount) nextSlide = 0;
-    showSlide(nextSlide);
-}, 2000);
-
-// Drawer menu mobile
-const menuBtn = document.getElementById('menu-btn');
-const menuNav = document.getElementById('menu-nav');
-if (menuBtn && menuNav) {
-    menuBtn.addEventListener('click', () => {
-        if (menuNav.classList.contains('-translate-x-full')) {
-            menuNav.classList.remove('-translate-x-full');
-            menuNav.classList.add('translate-x-0');
-        } else {
-            menuNav.classList.add('-translate-x-full');
-            menuNav.classList.remove('translate-x-0');
+        let currentSlide = 0;
+        function showSlide(idx) {
+            const carousel = document.getElementById('carousel');
+            const slideCount = carousel.children.length;
+            if (idx < 0) idx = 0;
+            if (idx >= slideCount) idx = slideCount - 1;
+            carousel.style.transform = `translateX(-${idx * 100}%)`;
+            currentSlide = idx;
         }
-    });
-}
-</script>
+        showSlide(0);
+
+        // Auto slide setiap 2 detik
+        setInterval(() => {
+            const carousel = document.getElementById('carousel');
+            if (!carousel) return;
+            const slideCount = carousel.children.length;
+            let nextSlide = currentSlide + 1;
+            if (nextSlide >= slideCount) nextSlide = 0;
+            showSlide(nextSlide);
+        }, 2000);
+
+        // Drawer menu mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const menuNav = document.getElementById('menu-nav');
+        if (menuBtn && menuNav) {
+            menuBtn.addEventListener('click', () => {
+                if (menuNav.classList.contains('-translate-x-full')) {
+                    menuNav.classList.remove('-translate-x-full');
+                    menuNav.classList.add('translate-x-0');
+                } else {
+                    menuNav.classList.add('-translate-x-full');
+                    menuNav.classList.remove('translate-x-0');
+                }
+            });
+        }
+    </script>
 
 </body>
 
