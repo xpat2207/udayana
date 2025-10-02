@@ -1,150 +1,167 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KONTAK - BINARIAN</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-[#F6FDF9]">
     <!-- HEADER -->
- <header class="sticky top-0 z-50 bg-white shadow-md">
-  <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 relative">
-    <!-- Logo -->
-    <div class="flex items-center gap-3 z-50">
-      <img src="img/LOGO BINARIAN.png" alt="Logo" class="w-10 h-10" />
-      <span class="font-bold text-2xl text-green-600 tracking-wide">BINARIAN</span>
-    </div>
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 relative">
+            <!-- Logo -->
+            <div class="flex items-center gap-3 z-50">
+                <img src="img/LOGO BINARIAN.png" alt="Logo" class="w-10 h-10" />
+                <span class="font-bold text-2xl text-green-600 tracking-wide">BINARIAN</span>
+            </div>
 
-    <!-- Tombol Menu (Mobile) -->
-    <button id="menu-btn" class="md:hidden text-green-700 text-2xl relative z-50">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+            <!-- Tombol Menu (Mobile) -->
+            <button id="menu-btn" class="md:hidden text-green-700 text-2xl relative z-50">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-    <!-- Drawer Menu (Mobile) -->
-    <div id="menu-nav" 
-      class="fixed top-[64px] left-0 h-[calc(100%-64px)] w-2/3 bg-white shadow-lg 
+            <!-- Drawer Menu (Mobile) -->
+            <div id="menu-nav" class="fixed top-[64px] left-0 h-[calc(100%-64px)] w-2/3 bg-white shadow-lg 
              transform -translate-x-full transition-transform duration-500 ease-in-out z-40 md:hidden">
-      <!-- top-[64px] = tinggi navbar -->
-      <ul class="flex flex-col gap-6 p-6 text-green-700 font-medium text-base">
-        <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
-        <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
-        <li><a href="program.html" class="hover:text-green-500">Program</a></li>
-        <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
-        <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
-        <li><a href="kontak.html" class="border-b-2 border-green-500 pb-1">Kontak</a></li>
-      </ul>
-    </div>
-
-    <!-- Menu Desktop -->
-    <ul class="hidden md:flex gap-6 text-green-700 font-medium text-base">
-      <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
-      <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
-      <li><a href="program.html" class="hover:text-green-500">Program</a></li>
-      <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
-      <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
-      <li><a href="kontak.html" class="border-b-2 border-green-500 pb-1">Kontak</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-        <main class="bg-[#F6FDF9] min-h-screen">
-               <!-- Kontak -->
-<section class=" mt-10 max-w-5xl mx-auto bg-gradient-to-br from-white to-green-50 rounded-3xl shadow-lg p-12  animate-fadein">
-    <h2 class="text-3xl font-bold text-green-700 mb-12 text-center">Hubungi Kami</h2>
-    <div class="grid md:grid-cols-2 gap-12">
-        <!-- Form -->
-        <form class="flex flex-col gap-6 text-green-700" onsubmit="event.preventDefault();alert('Pesan Anda telah terkirim!');this.reset();">
-            <input type="text" placeholder="Nama" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
-            <input type="email" placeholder="Email" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
-            <input type="tel" placeholder="Nomor HP" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
-            <textarea placeholder="Pesan Anda" required class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow"></textarea>
-            <button type="submit" class="bg-green-600 text-white px-8 py-3 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition">Kirim Pesan</button>
-        </form>
-
-        <!-- Info Kontak -->
-        <div class="flex flex-col justify-center text-green-800 space-y-6">
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-phone text-green-600 text-xl"></i>
-                <span>+62 812-3456-7890</span>
+                <!-- top-[64px] = tinggi navbar -->
+                <ul class="flex flex-col gap-6 p-6 text-green-700 font-medium text-base">
+                    <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+                    <li><a href="program.html" class="hover:text-green-500">Program</a></li>
+                    <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
+                    <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+                    <li><a href="kontak.html" class="border-b-2 border-green-500 pb-1">Kontak</a></li>
+                </ul>
             </div>
-            <div class="flex items-center gap-3">
-                <i class="fa-solid fa-envelope text-green-600 text-xl"></i>
-                <span>info@empowerid.com</span>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex gap-6 text-green-700 font-medium text-base">
+                <li><a href="index.html" class="hover:text-green-500">Beranda</a></li>
+                <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
+                <li><a href="program.html" class="hover:text-green-500">Program</a></li>
+                <li><a href="informasi.html" class="hover:text-green-500">Informasi</a></li>
+                <li><a href="artikel.html" class="hover:text-green-500">Artikel</a></li>
+                <li><a href="kontak.html" class="border-b-2 border-green-500 pb-1">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="bg-[#F6FDF9] min-h-screen">
+        <!-- Kontak -->
+        <section
+            class=" mt-10 max-w-5xl mx-auto bg-gradient-to-br from-white to-green-50 rounded-3xl shadow-lg p-12  animate-fadein">
+            <h2 class="text-3xl font-bold text-green-700 mb-12 text-center">Hubungi Kami</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Form -->
+                <form class="flex flex-col gap-6 text-green-700"
+                    onsubmit="event.preventDefault();alert('Pesan Anda telah terkirim!');this.reset();">
+                    <input type="text" placeholder="Nama" required
+                        class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <input type="email" placeholder="Email" required
+                        class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <input type="tel" placeholder="Nomor HP" required
+                        class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow" />
+                    <textarea placeholder="Pesan Anda" required
+                        class="px-4 py-3 rounded-lg border border-green-200 focus:outline-green-400 shadow"></textarea>
+                    <button type="submit"
+                        class="bg-green-600 text-white px-8 py-3 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition">Kirim
+                        Pesan</button>
+                </form>
+
+                <!-- Info Kontak -->
+                <div class="flex flex-col justify-center text-green-800 space-y-6">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-phone text-green-600 text-xl"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-envelope text-green-600 text-xl"></i>
+                        <span>info@empowerid.com</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
+                        <a href="https://www.instagram.com/empowerid" target="_blank"
+                            class="hover:underline">Instagram</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-tiktok text-black text-xl"></i>
+                        <a href="https://www.tiktok.com/@empowerid" target="_blank" class="hover:underline">TikTok</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-facebook text-blue-600 text-xl"></i>
+                        <a href="https://www.facebook.com/empowerid" target="_blank"
+                            class="hover:underline">Facebook</a>
+                    </div>
+                </div>
             </div>
-            <div class="flex items-center gap-3">
-                <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
-                <a href="https://www.instagram.com/empowerid" target="_blank" class="hover:underline">Instagram</a>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
+        <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
+            <div class="flex-1 min-w-[220px] mb-8">
+                <div class="flex items-center gap-4 mb-4">
+                    <div
+                        class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">
+                        DE</div>
+                    <div>
+                        <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
+                        <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
+                    </div>
+                </div>
+                <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan
+                    Indonesia yang lebih hijau dan inovatif.</div>
+                <div class="text-green-200 text-sm space-y-1">
+                    <div><span class="mr-2">📍</span>Jl. Sudirman No. 123, Jakarta Pusat</div>
+                    <div><span class="mr-2">📞</span>+62 21 1234 5678</div>
+                </div>
             </div>
-            <div class="flex items-center gap-3">
-                <i class="fa-brands fa-tiktok text-black text-xl"></i>
-                <a href="https://www.tiktok.com/@empowerid" target="_blank" class="hover:underline">TikTok</a>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Quick Links</div>
+                <ul class="space-y-1">
+                    <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
+                    <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
+                    <li><a href="program.html" class="hover:text-green-400">Program</a></li>
+                    <li><a href="#" class="hover:text-green-400">Event</a></li>
+                    <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
+                    <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
+                </ul>
             </div>
-            <div class="flex items-center gap-3">
-                <i class="fa-brands fa-facebook text-blue-600 text-xl"></i>
-                <a href="https://www.facebook.com/empowerid" target="_blank" class="hover:underline">Facebook</a>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Program Populer</div>
+                <ul class="space-y-1">
+                    <li>Green Tech Incubator</li>
+                    <li>Digital Marketing Mastery</li>
+                    <li>Startup Mentoring</li>
+                    <li>Fintech Innovation Lab</li>
+                    <li>Investor Readiness</li>
+                    <li>E-commerce Growth</li>
+                </ul>
+            </div>
+            <div class="flex-1 min-w-[180px] mb-8">
+                <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
+                <ul class="space-y-1">
+                    <li>Artikel & Blog</li>
+                    <li>Video Tutorial</li>
+                    <li>Template Bisnis</li>
+                    <li>Panduan Startup</li>
+                    <li>Industry Report</li>
+                    <li>Webinar Recording</li>
+                </ul>
             </div>
         </div>
-    </div>
-</section>
-        </main>
-        <!-- FOOTER -->
-        <footer class="bg-green-900 text-white pt-12 pb-6 mt-12">
-            <div class="max-w-6xl mx-auto flex flex-wrap gap-8 justify-between px-4">
-                <div class="flex-1 min-w-[220px] mb-8">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="bg-green-700 text-white font-bold text-xl w-12 h-12 rounded-full flex items-center justify-center shadow">DE</div>
-                        <div>
-                            <div class="font-bold text-lg tracking-wide">Digital Entrepreneur</div>
-                            <div class="text-green-200 text-sm font-medium mt-0.5">Fostering Growth</div>
-                        </div>
-                    </div>
-                    <div class="text-green-100 mb-4">Membangun ekosistem entrepreneur digital berkelanjutan untuk masa depan Indonesia yang lebih hijau dan inovatif.</div>
-                    <div class="text-green-200 text-sm space-y-1">
-                        <div><span class="mr-2">📍</span>Jl. Sudirman No. 123, Jakarta Pusat</div>
-                        <div><span class="mr-2">📞</span>+62 21 1234 5678</div>
-                    </div>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Quick Links</div>
-                    <ul class="space-y-1">
-                        <li><a href="index.html" class="hover:text-green-400">Beranda</a></li>
-                        <li><a href="tentang.html" class="hover:text-green-400">Tentang Kami</a></li>
-                        <li><a href="program.html" class="hover:text-green-400">Program</a></li>
-                        <li><a href="#" class="hover:text-green-400">Event</a></li>
-                        <li><a href="#" class="hover:text-green-400">Kisah Sukses</a></li>
-                        <li><a href="kontak.html" class="hover:text-green-400">Kontak</a></li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Program Populer</div>
-                    <ul class="space-y-1">
-                        <li>Green Tech Incubator</li>
-                        <li>Digital Marketing Mastery</li>
-                        <li>Startup Mentoring</li>
-                        <li>Fintech Innovation Lab</li>
-                        <li>Investor Readiness</li>
-                        <li>E-commerce Growth</li>
-                    </ul>
-                </div>
-                <div class="flex-1 min-w-[180px] mb-8">
-                    <div class="font-bold text-green-200 mb-2">Sumber Daya</div>
-                    <ul class="space-y-1">
-                        <li>Artikel & Blog</li>
-                        <li>Video Tutorial</li>
-                        <li>Template Bisnis</li>
-                        <li>Panduan Startup</li>
-                        <li>Industry Report</li>
-                        <li>Webinar Recording</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.</div>
-        </footer>
+        <div class="text-center text-green-200 text-sm mt-8">&copy; 2025 Digital Entrepreneur. All rights reserved.
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
+
 </html>

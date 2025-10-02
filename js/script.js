@@ -11,32 +11,32 @@ document.querySelector('.kontak-form')?.addEventListener('submit', function (e) 
 // NAVBAR RESPONSIF
 // ======================
 document.addEventListener("DOMContentLoaded", () => {
-  const menuBtn = document.getElementById("menu-btn");
-  const menuNav = document.getElementById("menu-nav");
-  let menuOpen = false;
+    const menuBtn = document.getElementById("menu-btn");
+    const menuNav = document.getElementById("menu-nav");
+    let menuOpen = false;
 
-  menuBtn.addEventListener("click", () => {
-    menuOpen = !menuOpen;
-    if (menuOpen) {
-      menuNav.classList.remove("-translate-x-full");
-      menuNav.classList.add("translate-x-0");
-      menuBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
-    } else {
-      menuNav.classList.add("-translate-x-full");
-      menuNav.classList.remove("translate-x-0");
-      menuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-    }
-  });
-
-  // Tutup menu saat klik link
-  document.querySelectorAll("#menu-nav a").forEach(link => {
-    link.addEventListener("click", () => {
-      menuNav.classList.add("-translate-x-full");
-      menuNav.classList.remove("translate-x-0");
-      menuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-      menuOpen = false;
+    menuBtn.addEventListener("click", () => {
+        menuOpen = !menuOpen;
+        if (menuOpen) {
+            menuNav.classList.remove("-translate-x-full");
+            menuNav.classList.add("translate-x-0");
+            menuBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        } else {
+            menuNav.classList.add("-translate-x-full");
+            menuNav.classList.remove("translate-x-0");
+            menuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        }
     });
-  });
+
+    // Tutup menu saat klik link
+    document.querySelectorAll("#menu-nav a").forEach(link => {
+        link.addEventListener("click", () => {
+            menuNav.classList.add("-translate-x-full");
+            menuNav.classList.remove("translate-x-0");
+            menuBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+            menuOpen = false;
+        });
+    });
 });
 
 
