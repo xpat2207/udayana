@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "kelas",
             title: "UMKM Level Up (Kominfo)",
             subtitle: "Program digitalisasi & pendampingan UMKM",
-            img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+            img: "https://indonesia.go.id/assets/upload/headline/WhatsApp_Image_2024-08-14_at_18_25_48_thumb.jpeg",
             description: "Program UMKM Level Up (Kominfo) mendorong adopsi teknologi, pelatihan e-commerce, dan integrasi pasar digital bagi UMKM di berbagai daerah.",
             source: "Indonesia.go.id",
             url: "https://indonesia.go.id/kategori/editorial/8587/umkm-indonesia-makin-kuat-program-level-up-2024-siap-dorong-digitalisasi-bisnis",
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "event",
             title: "UMK Digital Fest 2025 (Telkom)",
             subtitle: "Festival transformasi digital & bazar UMKM",
-            img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+            img: "https://asset.kompas.com/crops/tJH7BTuO9vKyn2bK3rQu17pazzE=/0x0:780x520/1200x800/data/photo/2025/08/04/689084da6000d.jpg",
             description: "Konferensi + bazar + workshop AI & digital marketing untuk UMKM. Fokus pada integrasi marketplace dan pelatihan teknis.",
             source: "Kompas (Tekno)",
             url: "https://biz.kompas.com/read/2025/08/04/170124928/telkom-dorong-umkm-naik-kelas-lewat-teknologi-di-umk-digital-fest-2025",
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
             category: "kelas",
             title: "UMKM Go Export (BCA & ICC)",
             subtitle: "Pendampingan ekspor & akses pasar internasional",
-            img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80",
+            img: "https://www.bca.co.id/-/media/Feature/News/Siaranpers/2025/09/20250926-dukung-umkm-tembus-pasar-global-bca-fasilitasi-business-matching-dengan-buyer-jerman-1.jpg",
             description: "Program pelatihan ekspor untuk UMKM: compliance, logistik, sertifikasi, serta channel buyer internasional.",
             source: "BCA Pressroom",
-            url: "https://www.bca.co.id/",
+            url: "https://www.bca.co.id/id/tentang-bca/media-riset/pressroom/siaran-pers/2025/09/26/01/42/dukung-umkm-tembus-pasar-global-bca-fasilitasi-business-matching-dengan-buyer-jerman",
             duration: "Program berkala"
         }
         // bisa tambah program lain
