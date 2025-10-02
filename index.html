@@ -61,12 +61,21 @@
         <section class="relative text-white text-center rounded-b-3xl shadow-lg overflow-hidden">
             <div class="relative w-full h-[400px] overflow-hidden rounded-b-3xl">
                 <div id="carousel" class="flex w-full h-full transition-transform duration-700">
-                    <img src="https://umkm.averroes.or.id/assets/assets_artikel/d0bd99163261318d5675e320af42c52d.jpeg"
+                    <img src="img/gambar 1.png"
                         class="w-full h-full object-cover flex-shrink-0" alt="Slide 1">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZc-sGfywXiDPpilz_cOd9G1JTw-2Y48pnA&s"
+                    <img src="img/gambar 2.png"
                         class="w-full h-full object-cover flex-shrink-0" alt="Slide 2">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpbzV1KlRKPvLum_xvBKLBKnfnmRVLACw4A&s"
+                    <img src="img/gambar 3.png"
                         class="w-full h-full object-cover flex-shrink-0" alt="Slide 3">
+                </div>
+                <!-- Kontrol manual -->
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+                    <button onclick="showSlide(0)"
+                        class="w-4 h-4 rounded-full bg-white/70 hover:bg-green-400 border-2 border-green-700"></button>
+                    <button onclick="showSlide(1)"
+                        class="w-4 h-4 rounded-full bg-white/70 hover:bg-green-400 border-2 border-green-700"></button>
+                    <button onclick="showSlide(2)"
+                        class="w-4 h-4 rounded-full bg-white/70 hover:bg-green-400 border-2 border-green-700"></button>
                 </div>
             </div>
             <!-- Overlay Konten -->
@@ -82,11 +91,45 @@
             </div>
         </section>
 
+        <!-- Selamat Datang di BINARIAN -->
+        <section class="max-w-5xl mx-auto py-12 px-6">
+            <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">Selamat Datang di BINARIAN</h2>
+            <p class="text-center text-gray-700 text-lg mb-8 max-w-3xl mx-auto">
+                BINARIAN adalah platform digital yang berfokus pada penyediaan informasi seputar UMKM, startup, dan
+                social
+                enterprise di Indonesia. Website ini tidak menawarkan layanan, transaksi, atau fitur jual beli,
+                melainkan
+                hanya menyajikan konten informatif, edukasi, dan inspirasi bagi pelaku usaha dan masyarakat umum.
+            </p>
 
-        </section>
-
-        <!-- KAMI -->
-        <section>
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <div
+                    class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4 hover:-translate-y-2 hover:shadow-xl transition">
+                    <h3 class="font-bold text-green-700 text-xl mb-2"><i
+                            class="fa-solid fa-lightbulb mr-2"></i>Informasi
+                        Utama</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Profil UMKM & Startup inspiratif</li>
+                        <li>Katalog produk dan jasa sebagai referensi</li>
+                        <li>Artikel, tips bisnis, dan kisah sukses</li>
+                        <li>Galeri foto dokumentasi aktivitas UMKM</li>
+                        <li>Berita dan update seputar dunia UMKM</li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4 hover:-translate-y-2 hover:shadow-xl transition">
+                    <h3 class="font-bold text-green-700 text-xl mb-2"><i class="fa-solid fa-users mr-2"></i>Tujuan
+                        Website</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Menyebarkan pengetahuan dan edukasi bisnis</li>
+                        <li>Memberikan inspirasi dan motivasi bagi pelaku UMKM</li>
+                        <li>Mendukung pertumbuhan ekosistem UMKM melalui informasi</li>
+                        <li>Menjadi sumber referensi terpercaya di bidang UMKM</li>
+                        <li>Mendorong inovasi dan kolaborasi melalui konten</li>
+                    </ul>
+                </div>
+            </div>
+                    <section>
             <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center py-12 px-6">
                 <div class="md:w-1/2 mb-8 md:mb-0 flex ">
                     <img src="img/charakter.png" alt="Karakter Sambutan" class="w-32 h-auto">
@@ -106,7 +149,27 @@
                 </div>
             </div>
         </section>
-
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow p-5 text-center transition transform hover:scale-105">
+                    <i class="fa-solid fa-chart-line text-green-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-green-700 mb-2">Edukasi Bisnis</h4>
+                    <p class="text-gray-700 text-sm">Dapatkan tips, strategi, dan panduan bisnis dari para ahli dan
+                        praktisi UMKM.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-5 text- center transition transform hover:scale-105">
+                    <i class="fa-solid fa-handshake text-green-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-green-700 mb-2">Inspirasi & Kisah Sukses</h4>
+                    <p class="text-gray-700 text-sm">Baca kisah inspiratif pelaku UMKM yang berhasil berkembang di era
+                        digital.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow p-5 text- center transition transform hover:scale-105">
+                    <i class="fa-solid fa-leaf text-green-600 text-3xl mb-3"></i>
+                    <h4 class="font-bold text-green-700 mb-2">Ekonomi Hijau</h4>
+                    <p class="text-gray-700 text-sm">Dukung inovasi ramah lingkungan dan bisnis berkelanjutan untuk masa
+                        depan Indonesia.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- FITUR WEBSITE -->
         <section
@@ -147,83 +210,31 @@
             </div>
         </section>
 
-
-
-        <!-- Program -->
-        <section
-            class="max-w-6xl mx-auto bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12">
-            <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Program Unggulan</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div
-                    class="bg-white text-green-700 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-4 hover:shadow-2xl">
-                    <h3 class="font-bold text-xl mb-3"><i
-                            class="fa-solid fa-mobile-screen-button text-green-600 mr-2"></i>UMKM Go Digital</h3>
-                    <p>Pelatihan & digitalisasi usaha untuk UMKM agar siap bersaing di era digital.</p>
+        <!-- DOKUMENTASI KEGIATAN UMKM -->
+        <section class="max-w-6xl mx-auto py-12 px-6">
+            <h2 class="text-3xl font-bold text-green-700 mb-8 text-center">Dokumentasi Kegiatan UMKM</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+                        alt="Pelatihan UMKM" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="font-bold text-green-700 mb-2">Pelatihan Digital Marketing</div>
+                    <div class="text-gray-600 text-sm text-center">Suasana pelatihan pemasaran digital untuk UMKM di
+                        Bali.</div>
                 </div>
-                <div
-                    class="bg-white text-green-700 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-4 hover:shadow-2xl">
-                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-rocket text-green-600 mr-2"></i>Startup
-                        Growth</h3>
-                    <p>Mentoring, inkubasi, networking, dan akses ke investor.</p>
+                <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
+                        alt="Pameran Produk UMKM" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="font-bold text-green-700 mb-2">Pameran Produk Lokal</div>
+                    <div class="text-gray-600 text-sm text-center">Produk-produk UMKM dipamerkan dalam event
+                        komunitas.</div>
                 </div>
-                <div
-                    class="bg-white text-green-700 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-4 hover:shadow-2xl">
-                    <h3 class="font-bold text-xl mb-3"><i class="fa-solid fa-leaf text-green-600 mr-2"></i>Social
-                        Entrepreneurship</h3>
-                    <p>Pengembangan bisnis yang berdampak sosial & lingkungan.</p>
+                <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+                        alt="Workshop UMKM" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <div class="font-bold text-green-700 mb-2">Workshop Pengembangan Usaha</div>
+                    <div class="text-gray-600 text-sm text-center">Peserta workshop belajar inovasi produk dan strategi
+                        bisnis.</div>
                 </div>
-                <div
-                    class="bg-white text-green-700 rounded-2xl p-6 shadow-lg transition duration-300 hover:-translate-y-4 hover:shadow-2xl">
-                    <h3 class="font-bold text-xl mb-3"><i
-                            class="fa-solid fa-graduation-cap text-green-600 mr-2"></i>Digital Academy</h3>
-                    <p>Kursus online, workshop, & webinar interaktif.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ARTIKEL & RESOURCE -->
-        <section class="max-w-6xl mx-auto bg-white rounded-3xl shadow-lg p-12 mb-12">
-            <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Artikel & Resource Center</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <!-- Artikel 1 -->
-                <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&q=80&w=1080"
-                        alt="Bisnis Digital" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2 text-green-800">Transformasi Digital UMKM</h3>
-                        <p class="text-sm text-gray-700 mb-3">Bagaimana digitalisasi membantu UMKM naik kelas di era
-                            global.</p>
-                        <a href="https://www.kompas.com/edu" target="_blank"
-                            class="text-green-600 hover:underline text-sm font-medium">Sumber: Kompas</a>
-                    </div>
-                </article>
-
-                <!-- Artikel 2 -->
-                <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
-                    <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?ixlib=rb-4.0.3&q=80&w=1080"
-                        alt="UMKM Naik Kelas" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2 text-green-800">Kisah Sukses UMKM Naik Kelas</h3>
-                        <p class="text-sm text-gray-700 mb-3">Inspirasi pelaku UMKM yang berhasil menembus pasar
-                            nasional.</p>
-                        <a href="https://www.cnnindonesia.com/ekonomi" target="_blank"
-                            class="text-green-600 hover:underline text-sm font-medium">Sumber: CNN Indonesia</a>
-                    </div>
-                </article>
-
-                <!-- Artikel 3 -->
-                <article class="bg-green-50 rounded-xl overflow-hidden shadow hover:-translate-y-2 transition">
-                    <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&q=80&w=1080"
-                        alt="Tips Bisnis" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-lg mb-2 text-green-800">Tips Digital Marketing untuk UMKM</h3>
-                        <p class="text-sm text-gray-700 mb-3">Strategi promosi online yang efektif dan hemat biaya.</p>
-                        <a href="https://www.kemenkopukm.go.id" target="_blank"
-                            class="text-green-600 hover:underline text-sm font-medium">Sumber: Kemenkop UKM</a>
-                    </div>
-                </article>
-
             </div>
         </section>
     </main>
@@ -284,6 +295,28 @@
 
     <!-- SCRIPT -->
     <script src="js/script.js"></script>
+    <script>
+let currentSlide = 0;
+function showSlide(idx) {
+    const carousel = document.getElementById('carousel');
+    const slideCount = carousel.children.length;
+    if (idx < 0) idx = 0;
+    if (idx >= slideCount) idx = slideCount - 1;
+    carousel.style.transform = `translateX(-${idx * 100}%)`;
+    currentSlide = idx;
+}
+showSlide(0);
+
+// Auto slide setiap 2 detik
+setInterval(() => {
+    const carousel = document.getElementById('carousel');
+    if (!carousel) return;
+    const slideCount = carousel.children.length;
+    let nextSlide = currentSlide + 1;
+    if (nextSlide >= slideCount) nextSlide = 0;
+    showSlide(nextSlide);
+}, 4000);
+</script>
 
 </body>
 
