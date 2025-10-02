@@ -32,7 +32,6 @@
             <!-- Drawer Menu (Mobile) -->
             <div id="menu-nav" class="fixed top-[64px] left-0 h-[calc(100%-64px)] w-2/3 bg-white shadow-lg 
              transform -translate-x-full transition-transform duration-500 ease-in-out z-40 md:hidden">
-                <!-- top-[64px] = tinggi navbar -->
                 <ul class="flex flex-col gap-6 p-6 text-green-700 font-medium text-base">
                     <li><a href="index.html" class="border-b-2 border-green-500 pb-1">Beranda</a></li>
                     <li><a href="tentang.html" class="hover:text-green-500">Tentang Kami</a></li>
@@ -55,12 +54,12 @@
         </nav>
     </header>
 
-
+    <!-- Ubah semua section utama agar full layar -->
     <main>
         <!-- TOP -->
-        <section class="relative text-white text-center rounded-b-3xl shadow-lg overflow-hidden">
-            <div class="relative w-full h-[400px] overflow-hidden rounded-b-3xl">
-                <div id="carousel" class="flex w-full h-full transition-transform duration-700">
+        <section class="relative text-white text-center rounded-b-3xl shadow-lg overflow-hidden w-full m-0 p-0">
+            <div class="relative w-full h-[400px] overflow-hidden rounded-b-3xl m-0 p-0">
+                <div id="carousel" class="flex w-full h-full transition-transform duration-700 m-0 p-0">
                     <img src="img/gambar 1.png"
                         class="w-full h-full object-cover flex-shrink-0" alt="Slide 1">
                     <img src="img/gambar 2.png"
@@ -79,35 +78,30 @@
                 </div>
             </div>
             <!-- Overlay Konten -->
-            <div class="absolute inset-0 flex flex-col justify-center items-center px-6 py-12 bg-black/40">
+            <div class="absolute inset-0 flex flex-col justify-center items-center px-0 py-12 bg-black/40 w-full">
                 <h1 class="hero-title text-4xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg">
                     Temukan Karir &<span class="text-yellow-200"> Peluang Baru</span><br>
-
                 </h1>
-
                 <p class="text-lg md:text-xl text-green-100 mb-8"> Kami percaya bahwa UMKM adalah tulang punggung
                     ekonomi Indonesia. Dengan semangat inovasi dan kolaborasi, kami menghadirkan produk unggulan yang
                     bermanfaat bagi masyarakat dan membuka peluang lebih luas bagi para pelaku usaha.
+                </p>
             </div>
         </section>
 
         <!-- Selamat Datang di BINARIAN -->
-        <section class="max-w-5xl mx-auto py-12 px-6">
+        <section class="w-full py-12 px-4 m-0">
             <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">Selamat Datang di BINARIAN</h2>
-            <p class="text-center text-gray-700 text-lg mb-8 max-w-3xl mx-auto">
+            <p class="text-center text-gray-700 text-lg mb-8 w-full mx-auto">
                 BINARIAN adalah platform digital yang berfokus pada penyediaan informasi seputar UMKM, startup, dan
-                social
-                enterprise di Indonesia. Website ini tidak menawarkan layanan, transaksi, atau fitur jual beli,
-                melainkan
-                hanya menyajikan konten informatif, edukasi, dan inspirasi bagi pelaku usaha dan masyarakat umum.
+                social enterprise di Indonesia. Website ini tidak menawarkan layanan, transaksi, atau fitur jual beli,
+                melainkan hanya menyajikan konten informatif, edukasi, dan inspirasi bagi pelaku usaha dan masyarakat umum.
             </p>
-
-            <div class="grid md:grid-cols-2 gap-8 mb-10">
+            <div class="grid md:grid-cols-2 gap-8 mb-10 w-full">
                 <div
                     class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4 hover:-translate-y-2 hover:shadow-xl transition">
                     <h3 class="font-bold text-green-700 text-xl mb-2"><i
-                            class="fa-solid fa-lightbulb mr-2"></i>Informasi
-                        Utama</h3>
+                            class="fa-solid fa-lightbulb mr-2"></i>Informasi Utama</h3>
                     <ul class="list-disc list-inside text-gray-700">
                         <li>Profil UMKM & Startup inspiratif</li>
                         <li>Katalog produk dan jasa sebagai referensi</li>
@@ -118,8 +112,7 @@
                 </div>
                 <div
                     class="bg-white rounded-2xl shadow p-6 flex flex-col gap-4 hover:-translate-y-2 hover:shadow-xl transition">
-                    <h3 class="font-bold text-green-700 text-xl mb-2"><i class="fa-solid fa-users mr-2"></i>Tujuan
-                        Website</h3>
+                    <h3 class="font-bold text-green-700 text-xl mb-2"><i class="fa-solid fa-users mr-2"></i>Tujuan Website</h3>
                     <ul class="list-disc list-inside text-gray-700">
                         <li>Menyebarkan pengetahuan dan edukasi bisnis</li>
                         <li>Memberikan inspirasi dan motivasi bagi pelaku UMKM</li>
@@ -129,40 +122,39 @@
                     </ul>
                 </div>
             </div>
-                    <section>
-            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center py-12 px-6">
-                <div class="md:w-1/2 mb-8 md:mb-0 flex ">
-                    <img src="img/charakter.png" alt="Karakter Sambutan" class="w-32 h-auto">
+            <section class="w-full py-12 px-0 m-0">
+                <div class="flex flex-col md:flex-row items-center justify-center py-12 px-0 w-full">
+                    <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+                        <img src="img/charakter.png" alt="Karakter Sambutan" class="w-32 h-auto">
+                    </div>
+                    <div class=" flex flex-col">
+                        <h2 class="text-3xl font-bold text-green-700 mb-6 ">Mengapa Memilih Kami?</h2>
+                        <p class="text-gray-800 mb-8 ">
+                            Kami berkomitmen untuk memberdayakan pelaku UMKM, startup, dan social enterprise di Indonesia
+                            melalui platform digital yang inovatif dan mudah diakses.
+                            Dengan berbagai fitur unggulan, kami membantu Anda mengembangkan bisnis, memperluas jaringan,
+                            dan meningkatkan pengetahuan secara efektif.
+                        </p>
+                        <div href="tentang.html"
+                            class="bg-green-600 text-white px-3 py-2 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition text-center text-sm">Pelajari
+                            Lebih Lanjut</div>
+                    </div>
                 </div>
-                <div class="ml-16">
-                    <h2 class="text-3xl font-bold text-green-700 mb-6">Mengapa Memilih Kami?</h2>
-                    <p class="text-gray-800 mb-8">
-                        Kami berkomitmen untuk memberdayakan pelaku UMKM, startup, dan social enterprise di Indonesia
-                        melalui platform digital yang inovatif dan mudah diakses.
-                        Dengan berbagai fitur unggulan, kami membantu Anda mengembangkan bisnis, memperluas jaringan,
-                        dan
-                        meningkatkan penjualan secara efektif.
-                    </p>
-                    <a href="tentang.html"
-                        class="bg-green-600 text-white px-6 py-3 rounded-full font-bold shadow hover:scale-105 hover:bg-green-700 transition">Pelajari
-                        Lebih Lanjut</a>
-                </div>
-            </div>
-        </section>
-            <div class="grid md:grid-cols-3 gap-6">
+            </section>
+            <div class="grid md:grid-cols-3 gap-6 w-full">
                 <div class="bg-white rounded-xl shadow p-5 text-center transition transform hover:scale-105">
                     <i class="fa-solid fa-chart-line text-green-600 text-3xl mb-3"></i>
                     <h4 class="font-bold text-green-700 mb-2">Edukasi Bisnis</h4>
                     <p class="text-gray-700 text-sm">Dapatkan tips, strategi, dan panduan bisnis dari para ahli dan
                         praktisi UMKM.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow p-5 text- center transition transform hover:scale-105">
+                <div class="bg-white rounded-xl shadow p-5 text-center transition transform hover:scale-105">
                     <i class="fa-solid fa-handshake text-green-600 text-3xl mb-3"></i>
                     <h4 class="font-bold text-green-700 mb-2">Inspirasi & Kisah Sukses</h4>
                     <p class="text-gray-700 text-sm">Baca kisah inspiratif pelaku UMKM yang berhasil berkembang di era
                         digital.</p>
                 </div>
-                <div class="bg-white rounded-xl shadow p-5 text- center transition transform hover:scale-105">
+                <div class="bg-white rounded-xl shadow p-5 text-center transition transform hover:scale-105">
                     <i class="fa-solid fa-leaf text-green-600 text-3xl mb-3"></i>
                     <h4 class="font-bold text-green-700 mb-2">Ekonomi Hijau</h4>
                     <p class="text-gray-700 text-sm">Dukung inovasi ramah lingkungan dan bisnis berkelanjutan untuk masa
@@ -172,10 +164,9 @@
         </section>
 
         <!-- FITUR WEBSITE -->
-        <section
-            class="max-w-6xl mx-auto bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12">
+        <section class="w-full bg-gradient-to-br from-green-50 via-white to-green-50 rounded-3xl shadow-lg p-12 mb-12 m-0">
             <h2 class="text-3xl font-bold text-green-700 mb-10 text-center">Fitur Website</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-green-700">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-green-700 w-full">
                 <div
                     class="bg-white rounded-xl p-6 shadow transition duration-300 hover:-translate-y-4 hover:shadow-2xl">
                     <h3 class="font-bold mb-2"><i class="fa-solid fa-house text-green-600 mr-2"></i>Homepage</h3>
@@ -211,9 +202,9 @@
         </section>
 
         <!-- DOKUMENTASI KEGIATAN UMKM -->
-        <section class="max-w-6xl mx-auto py-12 px-6">
+        <section class="w-full py-12 px-0 m-0">
             <h2 class="text-3xl font-bold text-green-700 mb-8 text-center">Dokumentasi Kegiatan UMKM</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
                 <div class="bg-white rounded-xl shadow p-4 flex flex-col items-center">
                     <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
                         alt="Pelatihan UMKM" class="rounded-lg mb-4 w-full h-48 object-cover">
@@ -315,7 +306,22 @@ setInterval(() => {
     let nextSlide = currentSlide + 1;
     if (nextSlide >= slideCount) nextSlide = 0;
     showSlide(nextSlide);
-}, 4000);
+}, 2000);
+
+// Drawer menu mobile
+const menuBtn = document.getElementById('menu-btn');
+const menuNav = document.getElementById('menu-nav');
+if (menuBtn && menuNav) {
+    menuBtn.addEventListener('click', () => {
+        if (menuNav.classList.contains('-translate-x-full')) {
+            menuNav.classList.remove('-translate-x-full');
+            menuNav.classList.add('translate-x-0');
+        } else {
+            menuNav.classList.add('-translate-x-full');
+            menuNav.classList.remove('translate-x-0');
+        }
+    });
+}
 </script>
 
 </body>
